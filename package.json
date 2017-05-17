@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ava": "^0.19.1"
+  },
+  "scripts": {
+    "test": "ava"
+  }
+}
