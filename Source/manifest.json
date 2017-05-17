@@ -5,7 +5,7 @@
   "short_name": "UnTrump",
 	"description": "Replaces the text of Trump's Name with an accurate insult.",
 	"author": "Len Smith",
-	"version": "2.0",
+	"version": "2.1",
 
 	"icons": {
 		"16": "icon16.png",
