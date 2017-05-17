@@ -1,43 +1,9 @@
-# Millennials to Snake People
+# UnTrump Chrome Extension.
 
-Browser extension that reveals the *real* truth behind Millennials.
+Never see T***'s name in your browser again.
 
-
-## Installation
-
-1. Add the extension to your browser of choice: 
-  - [Chrome](https://chrome.google.com/webstore/detail/millennials-to-snake-peop/jhkibealmjkbkafogihpeidfcgnigmlf)
-  - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/millennials-to-snake-people/)
-  - [Safari](https://github.com/a2/millennials-to-snake-people/releases)
-- [Free your mind](https://www.google.com/search?q=Millennials)
-
-
-## Also
-
-- Need headlines automatically converted and tweeted? Follow [@snakepeople_bot](https://twitter.com/snakepeople_bot) on Twitter, courtesy of [jimkang](https://github.com/jimkang)'s [hail-ants-bot](https://github.com/jimkang/hail-ants-bot)
-- Uncomfortable that a non-compulsory, intentionally subversive browser extension uses language to affect your worldview, but still want a laugh? Try [Millennials to Snake People Pure](https://chrome.google.com/webstore/detail/millennials-to-snake-peop/ekkcdmnckghgcbgkdfbafpgepbmkjhnd?hl=en-US)
-- Addicted to text replacement plugins? Check out [Cloud to Butt Plus](https://chrome.google.com/webstore/detail/cloud-to-butt-plus/apmlngnhgbnjpajelfkmabhkfapgnoai?hl=en), [SJW to Skeleton](https://chrome.google.com/webstore/detail/sjw-to-skeleton/kckodmjikeoncekpplppkkcjolofmacc?hl=en), [Millennials Begone!](https://chrome.google.com/webstore/detail/millennials-begone/dlgjecnejicmpdknhangcbeahbgipolf?hl=en)
-
-
-## Thanks
-
-Huge thank you to the following people for their help:
-
-- Ports
-    - [a2](https://github.com/a2) for the Safari port
-    - [pselle](https://github.com/pselle) for the Firefox port
-- Assistance and advice
-    - [samford](https://github.com/samford) 
-    - [vandahm](https://github.com/vandahm)
-- DraftJSapocalypse 
-    - [flarnie](https://github.com/flarnie)
-    - [drewski3420](https://github.com/drewski3420)
-    - [hguiney](https://github.com/hguiney)
-    - [redbassett](https://github.com/redbassett)
-    - [roshkins](https://github.com/roshkins)
-    - [SnoopJeDi](https://github.com/SnoopJeDi)
-    - [spicyj](https://github.com/spicyj)
-
+![pasted image](http://dl.dropbox.com/s/yry1mj2md0xw0db/Screenshot%202017-05-17%2000.11.08.png?dl=0)
+![pasted image](http://dl.dropbox.com/s/y189ppsqopq499y/Screenshot%202017-05-16%2023.40.59.png?dl=0)
 
 ## How to disable
 
@@ -56,9 +22,7 @@ Don't worry! The extension can be re-enabled after ~~it destroys your blog post~
 `Preferences` > `Extensions` > Uncheck checkbox next to `Millennials to Snake People`
 
 
-## Screenshots
 
-### Google Search Results
 [![Google Search Results](https://i.imgur.com/GTBOuEr.png)](https://www.google.com/search?q=Millennials)
 
 ### The Atlantic
