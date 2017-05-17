@@ -30,7 +30,7 @@ function getTrumpAdminNames() {
     "Minions Of Mordred",
     "Poor Killers",
     "Sean Spicer's Emergency Contacts",
-    "Fucking House of Hours",
+    "Fucking House of Horrors",
     "Horde of Racists",
     "White Guys Mostly Named Steve",
     "The Horse Steves Of The Apocalypse",
