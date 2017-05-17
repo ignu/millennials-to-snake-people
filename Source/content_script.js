@@ -1,13 +1,7 @@
-function walk(rootNode)
-{
+function walk(rootNode) {
     // Find all the text nodes in rootNode
-    var walker = document.createTreeWalker(
-        rootNode,
-        NodeFilter.SHOW_TEXT,
-        null,
-        false
-    ),
-    node;
+    var walker = document.createTreeWalker( rootNode, NodeFilter.SHOW_TEXT,
+      null, false), node;
 
     // Modify each text node's value
     while (node = walker.nextNode()) {
@@ -70,6 +64,7 @@ function getTrumpName() {
     "A Word Salad With Just A Few Ingredients",
     "счастливого Рождества",
     "If Turd Was An Ice Cream Flavor Half Of America Voted For",
+    "Man Who is Clearly Not A Reader",
     "Two Corinthians Is The Most"
   ]
 
@@ -81,29 +76,25 @@ function getShortTrumpName () {
   const TRUMP_NAMES = [
     "John Barron/Miller",
     "Noted Historian",
-    "Well Done Steak",
+    "A Well Done Steak",
     "Steve Bannon Associate",
-    "Stairphobic Racist",
+    "This Stairphobic Racist",
     "💩🍊",
     "Clueless Fart",
     "Obvious Glitch In The Matrix",
-    "Actual Sociopath",
-    "Sebastion v Gorka Employer",
+    "An Actual Sociopath",
     "Probable Russian Agent",
-    "Human Sewer",
-    "Human Imitator",
-    "Coddled Man Baby",
+    "A Human Sewer",
+    "A Coddled Man Baby",
     "Dumb Hitler",
     "An Ivanka Stalker",
     "Authoritarian Demogorgon",
     "Eric Trump's Father",
     "Grumpy Fascist",
     "The Planet's Dumbest Human",
-    "Human Sewer",
     "Alex Jones Guest",
     "Fox and Friends Junky",
     "Dictator Fanboy",
-    "Clearly Not A Reader",
     "Liar And/Or Idiot",
     "Real Loser",
     "Turd",
@@ -119,13 +110,15 @@ function getShortTrumpName () {
   const index = Math.floor(Math.random()*TRUMP_NAMES.length)
   return TRUMP_NAMES[index]
 }
+
 function getTwitter() {
   const TRUMP_NAMES = [
     "realDickJCock",
     "realDickJohnCock",
     "realDickTwitterShouldBan",
     "realPieceOfWork",
-    "real🇷🇺"
+    "realReasonIDrink",
+    "real🇷🇺",
     "real💩"
   ]
 
@@ -200,3 +193,11 @@ function walkAndObserve(doc) {
     }
 }
 walkAndObserve(document);
+
+if(module && module.exports) {
+  module.exports = {
+    getTrumpAdminNames,
+    getTrumpName,
+    getShortTrumpName
+  }
+}
