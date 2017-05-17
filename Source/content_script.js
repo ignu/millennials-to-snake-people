@@ -127,9 +127,9 @@ function replaceText(v)
     v = v.replace(/\b(P|p)resident (Donald( J\.)?)? Trump\b/g, getTrumpName());
     v = v.replace(/\b(P|p)resident (Donald)?Trump\b/g, getTrumpName());
     v = v.replace(/\b(D|d)onald\sTrump\b/g, getTrumpName());
-    v = v.replace(/\b(Trump\sAdministration\b/g, getTrumpAdminNames());
-    v = v.replace(/\b(Trump\sCampaign\b/g, getTrumpAdminNames());
-    v = v.replace(/Trump/g, getShortTrumpName());
+    v = v.replace(/\bTrump\sAdministration\b/g, getTrumpAdminNames());
+    v = v.replace(/\bTrump\s(c|C)ampaign\b/g, getTrumpAdminNames());
+    v = v.replace(/(Mr.\s)?Trump/g, getShortTrumpName());
     v = v.replace(/\b(P|p)resident Trump\b/g, getTrumpName());
 
     return v;
