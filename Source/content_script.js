@@ -19,6 +19,29 @@ function handleText(textNode) {
   textNode.nodeValue = replaceText(textNode.nodeValue);
 }
 
+function getTrumpAdminNames() {
+  const TRUMP_NAMES = [
+    "Pack Of Sociopaths",
+    "Billionaire Parasites",
+    "Soulless Vampires",
+    "Dregs Of Humanity",
+    "Mediocre Liars",
+    "A Legitimate Reason To Question Evolution",
+    "Minions Of Mordred",
+    "Poor Killers",
+    "Sean Spicer's Emergency Contacts",
+    "Fucking House of Hours",
+    "Horde of Racists",
+    "White Guys Mostly Named Steve",
+    "The Horse Steves Of The Apocalypse",
+    "🇷🇺Probably The Russian Government🇷🇺",
+    "Putin's Patsies"
+  ]
+
+  const index = Math.floor(Math.random()*TRUMP_NAMES.length)
+  return TRUMP_NAMES[index]
+}
+
 function getTrumpName() {
   const TRUMP_NAMES = [
     "A Barely Sentient Sack of Festering Racism",
@@ -30,16 +53,24 @@ function getTrumpName() {
     "Popular Vote Loser",
     "Like Syphilis Got Syphilis and Became Corporeal",
     "Cheeto-Faced, Ferret Wearing ShitGibbon",
-    "The Planet's Dumbest Human",
     "No Puppet No Puppet",
+    "Guy Who Ruined House Of Cards By Being An Absurd Fascist",
     "Guy Who Still Thinks Hillary Poured Bleach On Her Emails",
+    "Guy Who Probably Understands Object Permanence",
     "A Man Who Will Never Know Laughter",
+    "Man Who Can Name Most Of His Kids",
     "Mankind's Biggest Embarrassment",
     "Mangled Apricot Hellbeast",
     "Two Scoops Of Ice Cream Consumer",
+    "Temperate Man Who Can End Civilization",
+    "A Real Bad Acid Trip",
     "Leatherfaced Piss Jar",
+    "Short Fingered Vulgarian",
+    "Not The Sharpest Knife In The Drawer (a phrase i just came up with)",
+    "A Word Salad With Just A Few Ingredients",
     "счастливого Рождества",
-    "If Turd was an Ice Cream Flavor Half of America Voted For"
+    "If Turd Was An Ice Cream Flavor Half Of America Voted For",
+    "Two Corinthians Is The Most"
   ]
 
   const index = Math.floor(Math.random()*TRUMP_NAMES.length)
@@ -50,29 +81,29 @@ function getShortTrumpName () {
   const TRUMP_NAMES = [
     "John Barron/Miller",
     "Noted Historian",
+    "Well Done Steak",
     "Steve Bannon Associate",
     "Stairphobic Racist",
     "💩🍊",
     "Clueless Fart",
+    "Obvious Glitch In The Matrix",
     "Actual Sociopath",
-    "Noted Nazi Employer",
     "Sebastion v Gorka Employer",
     "Probable Russian Agent",
     "Human Sewer",
-    "Unidentifiable Organism",
     "Human Imitator",
-    "Coddled ManBaby",
+    "Coddled Man Baby",
     "Dumb Hitler",
+    "An Ivanka Stalker",
     "Authoritarian Demogorgon",
     "Eric Trump's Father",
     "Grumpy Fascist",
     "The Planet's Dumbest Human",
     "Human Sewer",
-    "Alex Jones Fan",
-    "Bill O'Reilly Fan",
+    "Alex Jones Guest",
     "Fox and Friends Junky",
     "Dictator Fanboy",
-    "Not A Reader",
+    "Clearly Not A Reader",
     "Liar And/Or Idiot",
     "Real Loser",
     "Turd",
@@ -96,7 +127,10 @@ function replaceText(v)
     v = v.replace(/\b(P|p)resident (Donald( J\.)?)? Trump\b/g, getTrumpName());
     v = v.replace(/\b(P|p)resident (Donald)?Trump\b/g, getTrumpName());
     v = v.replace(/\b(D|d)onald\sTrump\b/g, getTrumpName());
+    v = v.replace(/\b(Trump\sAdministration\b/g, getTrumpAdminNames());
+    v = v.replace(/\b(Trump\sCampaign\b/g, getTrumpAdminNames());
     v = v.replace(/Trump/g, getShortTrumpName());
+    v = v.replace(/\b(P|p)resident Trump\b/g, getTrumpName());
 
     return v;
 }
