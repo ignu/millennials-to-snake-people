@@ -1,10 +1,10 @@
 {
 	"manifest_version": 2,
 
-	"name": "Millennials to Snake People",
-    "short_name": "Snake People",
-	"description": "Replaces the text 'Millennial' with 'Snake People'.",
-	"author": "Eric Bailey",
+	"name": "UnTrump: Replace 'Trump' with Trump insults.",
+  "short_name": "UnTrump",
+	"description": "Replaces the text of Trump's Name with an accurate insult.",
+	"author": "Len Smith",
 	"version": "2.0",
 
 	"icons": {

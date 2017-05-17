@@ -120,15 +120,32 @@ function getShortTrumpName () {
   return TRUMP_NAMES[index]
 }
 
+function getTwitter() {
+  const TRUMP_NAMES = [
+    "realDickJCock",
+    "realDickJCock",
+    "realGodThisCantBeReal",
+    "realDickTwitterShouldBan",
+    "realPieceOfWork",
+    "real💩"
+  ]
+
+  const index = Math.floor(Math.random()*TRUMP_NAMES.length)
+  return TRUMP_NAMES[index]
+}
+
 
 function replaceText(v)
 {
     // Fix some misspellings
-    v = v.replace(/\b(P|p)resident (Donald( J\.)?)? Trump\b/g, getTrumpName());
-    v = v.replace(/\b(P|p)resident (Donald)?Trump\b/g, getTrumpName());
-    v = v.replace(/\b(D|d)onald\sTrump\b/g, getTrumpName());
+    v = v.replace(/\brealDonaldTrump\b/g, getTwitter());
+    v = v.replace(/\b(P|p)resident\s(Donald(\sJ(\.)?)?)? Trump\b/g, getTrumpName());
+    v = v.replace(/\b(D|d)onald(\sJohn)?\sTrump\b/g, getTrumpName());
     v = v.replace(/\bTrump\sAdministration\b/g, getTrumpAdminNames());
+    v = v.replace(/Donald\sJohn\sTrump/g, getTrumpName());
+    v = v.replace(/Donald\sJ\.\sTrump/g, getTrumpName());
     v = v.replace(/\bTrump\s(c|C)ampaign\b/g, getTrumpAdminNames());
+    v = v.replace(/(Donald(\sJ(\.)?)?\s)?Trump/g, getShortTrumpName());
     v = v.replace(/(Mr.\s)?Trump/g, getShortTrumpName());
     v = v.replace(/\b(P|p)resident Trump\b/g, getTrumpName());
 
